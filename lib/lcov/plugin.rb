@@ -87,15 +87,15 @@ module Danger
 
     def markdown_table(violations)
       table = "### #{$lcov_total_coverage} 👓 \n\n"
-      table << "### Files found #{violations.length} issues ❌\n\n"
-      table << "| File | Coverage |\n"
-      table << "| ---- | -------- |\n"
+      table << "### Files found #{violations.length} \n\n"
+      table << "| Coverage | File |\n"
+      table << "| -------- | ---- |\n"
 
       return violations.reduce(table) { |acc, violation| acc << table_row(violation) }
     end
 
     def table_row(violation)
-      "| `#{violation.file}` | #{violation.coverage} |\n"
+      "| #{violation.coverage} | `#{violation.file}` |\n"
     end
 
     def filtered_violations(violations)
