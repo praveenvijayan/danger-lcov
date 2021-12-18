@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.name          = "danger-lcov"
   spec.version       = Lcov::VERSION
   spec.authors       = ["Praveen Vijayan"]
-  spec.email         = ["praveen.vijayan@sapientrazorfish.com"]
+  spec.email         = ["praveenv.vijayan@gmail.com"]
   spec.description   = "A short description of danger-lcov."
   spec.summary       = "A longer description of danger-lcov."
-  spec.homepage      = "https://github.com/Praveen Vijayan/danger-lcov"
+  spec.homepage      = "https://github.com/praveenvijayan/danger-lcov"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
